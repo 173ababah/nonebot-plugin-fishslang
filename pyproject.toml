@@ -1,0 +1,28 @@
+[project]
+name = "nonebot-plugin-fishslang"
+version = "0.1.0"
+description = "群聊黑话词典：全局+本群两级合并、按最近聊天加权注入提示词（nonebot2，零 LLM 开销）"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "173ababah" }]
+keywords = ["nonebot2", "nonebot-plugin", "slang", "prompt", "qq-group"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Framework :: Nonebot2",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = ["nonebot2>=2.0.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/173ababah/nonebot-plugin-fishslang"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
